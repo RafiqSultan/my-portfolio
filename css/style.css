@@ -38,6 +38,14 @@ section {
     padding: 100px 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
 .max-width {
     max-width: 1300px;
     padding: 0 80px;
@@ -47,7 +55,7 @@ section {
 .about,
 .services,
 .skills,
-.teams,
+.projects,
 .contact,
 footer {
     font-family: 'Poppins', sans-serif;
@@ -200,7 +208,7 @@ section .title::after {
 
 .home {
     display: flex;
-    background: url("images/banner_protofiliO.png") no-repeat;
+    background: url("../images/banner_protofiliO.png") no-repeat;
     background-position: right center;
     height: 100vh;
     width: 100%;
@@ -316,18 +324,18 @@ section .title::after {
 /* services section styling */
 
 .services,
-.teams {
+.projects {
     color: #fff;
     background: #111;
 }
 
 .services .title::before,
-.teams .title::before {
+.projects .title::before {
     background: #fff;
 }
 
 .services .title::after,
-.teams .title::after {
+.projects .title::after {
     background: #111;
     content: "what i provide";
 }
@@ -525,79 +533,47 @@ section .title::after {
 }
 
 
-/* teams section styling */
+/* projects section styling */
 
-.teams .title::after {
+.projects .title::after {
     content: "who with me";
 }
 
-.teams .carousel .card {
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-.teams .carousel .card:hover {
-    background: crimson;
-}
-
-.teams .carousel .card .box {
+.projects .category {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
+    align-items: center;
 }
 
-.teams .carousel .card:hover .box {
-    transform: scale(1.05);
+.projects .category ul {
+    display: flex;
+    margin-bottom: 10px;
 }
 
-.teams .carousel .card .text {
-    font-size: 25px;
+.projects .category li a {
+    font-size: 20px;
     font-weight: 500;
-    margin: 10px 0 7px 0;
+    margin: 0 10px;
+    color: #fff;
+    text-transform: capitalize;
 }
 
-.teams .carousel .card img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
+.projects .card-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
 }
 
-.teams .carousel .card:hover img {
-    border-color: #fff;
+.projects .card-projects .card-item {
+    background-color: #fff;
+    color: #000;
+    width: 200px;
+    height: 200px;
+    /* display: none; */
 }
 
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid crimson!important;
-    transition: all 0.3s ease;
-}
-
-.owl-dot.active {
-    width: 35px;
-    border-radius: 14px;
-}
-
-.owl-dot.active,
-.owl-dot:hover {
-    background: crimson!important;
+.projects .card-projects .card-item.hidden {
+    display: none;
 }
 
 
