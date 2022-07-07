@@ -47,7 +47,7 @@ ul {
 }
 
 .max-width {
-    max-width: 1300px;
+    max-width: 1400px;
     padding: 0 80px;
     margin: auto;
 }
@@ -481,15 +481,23 @@ section .title::after {
 /* Skills line   */
 
 .skills .skills-content .right .line.html span {
-    width: 90%;
+    width: 95%;
 }
 
 .skills .skills-content .right .line.css span {
-    width: 85%;
+    width: 90%;
+}
+
+.skills .skills-content .right .line.bootstarp span {
+    width: 90%;
 }
 
 .skills .skills-content .right .line.js span {
-    width: 80%;
+    width: 85%;
+}
+
+.skills .skills-content .right .line.react span {
+    width: 85%;
 }
 
 .skills .skills-content .right .line.bootstarp span {
@@ -497,6 +505,14 @@ section .title::after {
 }
 
 .skills .skills-content .right .line.php span {
+    width: 90%;
+}
+
+.skills .skills-content .right .line.database span {
+    width: 90%;
+}
+
+.skills .skills-content .right .line.mvc span {
     width: 85%;
 }
 
@@ -516,14 +532,22 @@ section .title::after {
 }
 
 .skills .skills-content .right .line.js span::after {
-    content: '90%';
+    content: '85%';
 }
 
 .skills .skills-content .right .line.bootstarp span::after {
     content: '90%';
 }
 
+.skills .skills-content .right .line.react span::after {
+    content: '85%';
+}
+
 .skills .skills-content .right .line.php span::after {
+    content: '90%';
+}
+
+.skills .skills-content .right .line.mvc span::after {
     content: '85%';
 }
 
@@ -531,11 +555,15 @@ section .title::after {
     content: '85%';
 }
 
+.skills .skills-content .right .line.database span::after {
+    content: '90%';
+}
+
 
 /* projects section styling */
 
 .projects .title::after {
-    content: "who with me";
+    content: "My Works";
 }
 
 .projects .category {
@@ -550,6 +578,12 @@ section .title::after {
     width: 100%;
     text-align: right;
     margin-top: -30px;
+}
+
+@media (max-width: 690px) {
+    .projects .category ul {
+        display: none;
+    }
 }
 
 .projects .category li a {
@@ -567,7 +601,7 @@ section .title::after {
 
 .projects .card-projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
     gap: 10px;
 }
 
@@ -608,8 +642,9 @@ section .title::after {
     font-weight: bold;
     font-size: 26px;
     text-transform: capitalize;
-    text-shadow: 0 5px 15px crimson;
     margin: 10px 0;
+    padding: 5px;
+    font-style: italic;
 }
 
 .projects .card-projects .card-item h4 span {
@@ -774,7 +809,7 @@ section .title::after {
     align-items: center;
     justify-content: space-evenly;
     width: 40px;
-    height: 170px;
+    height: 195px;
     background-color: #fff;
     box-shadow: 0 0 10px #fff;
     border-radius: 5px;
@@ -802,6 +837,10 @@ section .title::after {
 
 .socialMedia .github i {
     color: rgb(34, 36, 34);
+}
+
+.socialMedia .gmail i {
+    color: rgb(202, 7, 7);
 }
 
 

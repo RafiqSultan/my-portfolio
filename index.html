@@ -23,7 +23,7 @@
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#services" class="menu-btn">Services</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#teams" class="menu-btn">Teams</a></li>
+                <li><a href="#teams" class="menu-btn">Projects</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -39,7 +39,7 @@
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Rafiq Sultan</div>
                 <div class="text-3">I'm a <span class="typing"></span></div>
-                <a href="#contact">Contact me</a>
+                <a href="#">Contact me</a>
             </div>
         </div>
     </section>
@@ -73,21 +73,21 @@
                     <div class="box">
                         <i class="fas fa-paint-brush"></i>
                         <div class="text">Web Design</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                        <p>I design websites from start to finish on my own or as part of a team</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code "></i>
+                        <div class="text">Web Developer</div>
+                        <p>The ability to modify and develop ready-made websites</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-chart-line"></i>
-                        <div class="text">Advertising</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text">Apps Design</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                        <div class="text">Design ERP</div>
+                        <p>Carry out design and analysis of software and marketing systems</p>
                     </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@
             <h2 class="title">My skills</h2>
             <div class="skills-content">
                 <div class="column left right">
-                    <h2>frontEnd</h2>
+                    <h2>FrontEnd</h2>
                     <div class="bars">
                         <div class="info">
                             <span>HTML</span>
@@ -133,24 +133,29 @@
                             <span>React</span>
 
                         </div>
-                        <div class="line js"><span></span></div>
+                        <div class="line react"><span></span></div>
                     </div>
                 </div>
                 <div class="column right">
-                    <h2>backEnd</h2>
+                    <h2>BackEnd</h2>
 
                     <div class="bars">
                         <div class="info">
                             <span>PHP</span>
-
                         </div>
                         <div class="line php"><span></span></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>database</span>
+                        </div>
+                        <div class="line database"><span></span></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>design Pattern MVC</span>
                         </div>
-                        <div class="line php"><span></span></div>
+                        <div class="line mvc"><span></span></div>
                     </div>
 
                     <div class="bars">
@@ -172,59 +177,107 @@
             <div class="category">
                 <ul>
                     <li>
-                        <a> all</a>
+                        <a id="listall"> all</a>
                     </li>
                     <li>
-                        <a href="#">laravel</a>
+                        <a id="listlaravel">laravel</a>
                     </li>
                     <li>
                         <a id="listphp">php</a>
                     </li>
                     <li>
-                        <a href="#">React</a>
+                        <a id="listreact">React</a>
                     </li>
                     <li>
-                        <a id="listhtml">html$css</a>
+                        <a id="listbootstrap">bootstarp</a>
+                    </li>
+                    <li>
+                        <a id="listhtml">html-css-js</a>
                     </li>
 
                 </ul>
             </div>
 
             <div class="card-projects">
-                <div class="card-item html_and_css">
+                <div class="card-item all html_and_css">
                     <div class="image">
                         <img src="images/mockup_projects/coffee_shop_mockup.jpg" alt="coffee_shop_mockup">
                     </div>
                     <div class="content">
                         <h1>
-                            <a href="#">coffee shop website</a>
+                            <a href="https://rafiqsultan.github.io/coffee-shop">coffee shop website</a>
                         </h1>
                         <h4> using <span>html</span>,<span>css</span> and <span>js</span></h4>
                         <p>simple design to display products of coffee.</p>
+                        <a href="https://rafiqsultan.github.io/coffee-shop" class="live">live demo<i class="fas fa-eye"></i> </a>
+                    </div>
+                </div>
+                <div class="card-item all html_and_css">
+                    <div class="image">
+                        <img src="images/mockup_projects/homelist_mockup.jpg" alt="homelist_mockup">
+                    </div>
+                    <div class="content">
+                        <h1>
+                            <a href="https://rafiqsultan.github.io/home-list-sell">Home-List website</a>
+                        </h1>
+                        <h4> using <span>html</span>,<span>css</span> and <span>js</span></h4>
+                        <p>home list website for sell,buy or Rent home.</p>
+                        <a href="https://rafiqsultan.github.io/home-list-sell" class="live">live demo<i class="fas fa-eye"></i> </a>
+                    </div>
+                </div>
+                <div class="card-item all bootstarp">
+                    <div class="image">
+                        <img src="images/mockup_projects/movies_mockup.jpg" alt="movies_mockup">
+                    </div>
+                    <div class="content">
+                        <h1>
+                            <a href="https://rafiqsultan.github.io/movies_TV">Movies-Tv website</a>
+                        </h1>
+                        <h4> using <span>html</span>,<span>css</span>,<span>bootstarp</span> and <span>js</span></h4>
+                        <p>movies website for all new movies.</p>
+                        <a href="https://rafiqsultan.github.io/movies_TV" class="live">live demo<i class="fas fa-eye"></i> </a>
+                    </div>
+                </div>
+                <div class="card-item all php">
+                    <div class="image">
+                        <img src="images/mockup_projects/online-food-mockup.jpg" alt="online-food-mockup">
+                    </div>
+                    <div class="content">
+                        <h1>
+                            <a href="#">online-food-Fast website</a>
+                        </h1>
+                        <h4> using <span>html</span>,<span>css</span>,<span>bootstarp</span>,<span>js</span> and <span>php</span></h4>
+                        <p>online food delivery website with dashborad. </p>
                         <a href="#" class="live">live demo<i class="fas fa-eye"></i> </a>
                     </div>
                 </div>
-                <!-- <div class="card-item php">
-                    <h1>card2php</h1>
+                <div class="card-item all bootstarp">
+                    <div class="image">
+                        <img src="images/mockup_projects/onlinie_mockup.jpg" alt="onlinie_mockup">
+                    </div>
+                    <div class="content">
+                        <h1>
+                            <a href="https://rafiqsultan.github.io/online-store">Online Store Website</a>
+                        </h1>
+                        <h4> using <span>html</span>,<span>css</span>,<span>bootstarp</span> and <span>js</span></h4>
+                        <p>online electronic store,it's contains everything you need .</p>
+                        <a href="https://rafiqsultan.github.io/online-store" class="live">live demo<i class="fas fa-eye"></i> </a>
+                    </div>
                 </div>
-                <div class="card-item html_and_css">
-                    <h1>card3</h1>
+                <div class="card-item all html_and_css">
+                    <div class="image">
+                        <img src="images/mockup_projects/shala_mockup.jpg" alt="shala_mockup">
+                    </div>
+                    <div class="content">
+                        <h1>
+                            <a href="https://rafiqsultan.github.io/shala_app">shala_app Design</a>
+                        </h1>
+                        <h4> using <span>html</span>,<span>css</span> and <span>js</span></h4>
+                        <p>shala_app website for download app.</p>
+                        <a href="https://rafiqsultan.github.io/shala_app" class="live">live demo<i class="fas fa-eye"></i> </a>
+                    </div>
                 </div>
-                <div class="card-item">
-                    <h1>card4</h1>
-                </div>
-                <div class="card-item html_and_css">
-                    <h1>card5</h1>
-                </div>
-                <div class="card-item php">
-                    <h1>card1php</h1>
-                </div>
-                <div class="card-item">
-                    <h1>card1</h1>
-                </div>
-                <div class="card-item">
-                    <h1>card1</h1>
-                </div> -->
+
             </div>
 
         </div>
@@ -271,20 +324,20 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form class="form-contact" action="#">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" id="name" placeholder="Name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" id="email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" id="Subject" placeholder="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea cols="30" rows="10" id="message-contacct" placeholder="Message.." required></textarea>
                         </div>
                         <div class="button-area">
                             <button type="submit">Send message</button>
@@ -297,16 +350,19 @@
     <!-- Contact With Social Meadia -->
     <section class="socialMedia">
         <div class="socialIcon facebook">
-            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100005059687111"><i class="fab fa-facebook"></i></a>
         </div>
         <div class="socialIcon whatsapp">
-            <a href="#"><i class="fab fa-whatsapp" ></i></a>
+            <a href="https://wa.me/967777350652"><i class="fab fa-whatsapp" ></i></a>
         </div>
         <div class="socialIcon linkedin">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="https://linkedin.com/in/rafiq-sultan"><i class="fab fa-linkedin"></i></a>
         </div>
         <div class="socialIcon github">
-            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/RafiqSultan"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="socialIcon gmail">
+            <a href="mailto:rafiq.alsultan@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
 
     </section>

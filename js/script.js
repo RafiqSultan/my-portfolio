@@ -1,19 +1,36 @@
-let list_projects = document.getElementsByClassName('card-item');
-document.querySelector('#listhtml').onclick = () => {
-    for (let i = 0; i < list_projects.length; i++) {
-        $('.projects .card-projects .card-item.php').addClass("hidden");
+// let list_projects = document.getElementsByClassName('card-item');
+// document.querySelector('#listhtml').onclick = () => {
+//     for (let i = 0; i < list_projects.length; i++) {
+//         $('.projects .card-projects .card-item.php').addClass("hidden");
+//         $('.projects .card-projects .card-item.laravel').addClass("hidden");
+//         $('.projects .card-projects .card-item.react').addClass("hidden");
+//         $('.projects .card-projects .card-item.bootstrap').addClass("hidden");
 
-    }
-    document.querySelector('#listhtml').style.color = "crimson";
-    document.querySelector('#listphp').style.color = '#FFF';
-}
-document.querySelector('#listphp').onclick = () => {
-    for (let i = 0; i < list_projects.length; i++) {
-        $('.projects .card-projects .card-item.html_and_css').addClass("hidden");
-    }
-    document.querySelector('#listphp').style.color = "crimson";
-    document.querySelector('#listhtml').style.color = '#FFF';
-}
+//     }
+//     document.querySelector('#listhtml').style.color = "crimson";
+//     document.querySelector('#listall').style.color = '#FFF';
+//     document.querySelector('#listreact').style.color = '#FFF';
+//     document.querySelector('#listphp').style.color = '#FFF';
+//     document.querySelector('#listbootstrap').style.color = '#FFF';
+// }
+
+// document.querySelector('#listphp').onclick = () => {
+//     for (let i = 0; i < list_projects.length; i++) {
+//         $('.projects .card-projects .card-item.html_and_css').addClass("hidden");
+//     }
+//     document.querySelector('#listphp').style.color = "crimson";
+//     document.querySelector('#listhtml').style.color = '#FFF';
+// }
+
+// // *send email
+// const form = document.querySelector('.form-contact'),
+//     name = document.querySelector('#name'),
+//     email = document.querySelector('#email'),
+//     subject = document.querySelector('#subject'),
+//     msg = document.querySelector('#message-contact');
+
+
+//     // function send email
 
 
 
