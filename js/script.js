@@ -1,13 +1,18 @@
-let list_html = document.getElementsByClassName('card-item');
+let list_projects = document.getElementsByClassName('card-item');
 document.querySelector('#listhtml').onclick = () => {
-    for (let i = 0; i < list_html.length; i++) {
+    for (let i = 0; i < list_projects.length; i++) {
         $('.projects .card-projects .card-item.php').addClass("hidden");
+
     }
+    document.querySelector('#listhtml').style.color = "crimson";
+    document.querySelector('#listphp').style.color = '#FFF';
 }
 document.querySelector('#listphp').onclick = () => {
-    for (let i = 0; i < list_html.length; i++) {
+    for (let i = 0; i < list_projects.length; i++) {
         $('.projects .card-projects .card-item.html_and_css').addClass("hidden");
     }
+    document.querySelector('#listphp').style.color = "crimson";
+    document.querySelector('#listhtml').style.color = '#FFF';
 }
 
 

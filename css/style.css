@@ -313,6 +313,7 @@ section .title::after {
     border-radius: 6px;
     border: 2px solid crimson;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .about .about-content .right a:hover {
@@ -387,19 +388,17 @@ section .title::after {
 
 .skills .skills-content .column {
     width: calc(50% - 30px);
+    /* flex: 0 0 50%;
+    max-width: 50%; */
 }
 
-.skills .skills-content .left .text {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
 
-.skills .skills-content .left p {
+/* .skills .skills-content .left p {
     text-align: justify;
-}
+}  */
 
-.skills .skills-content .left a {
+
+/* .skills .skills-content .left a {
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -415,7 +414,7 @@ section .title::after {
 .skills .skills-content .left a:hover {
     color: crimson;
     background: none;
-}
+} */
 
 .skills .skills-content .right .bars {
     margin-bottom: 15px;
@@ -547,7 +546,10 @@ section .title::after {
 
 .projects .category ul {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: right;
+    margin-top: -30px;
 }
 
 .projects .category li a {
@@ -556,24 +558,91 @@ section .title::after {
     margin: 0 10px;
     color: #fff;
     text-transform: capitalize;
+    cursor: pointer;
+}
+
+.projects .category li a:hover {
+    color: crimson;
 }
 
 .projects .card-projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 10px;
 }
 
 .projects .card-projects .card-item {
     background-color: #fff;
     color: #000;
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 5px 10px;
+    border-radius: 10px;
     /* display: none; */
+}
+
+.projects .card-projects .card-item:hover .image img {
+    transform: scale(1.2);
 }
 
 .projects .card-projects .card-item.hidden {
     display: none;
+}
+
+.projects .card-projects .card-item .image {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+
+.projects .card-projects .card-item .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.projects .card-projects .card-item h1 a {
+    color: crimson;
+    font-weight: bold;
+    font-size: 26px;
+    text-transform: capitalize;
+    text-shadow: 0 5px 15px crimson;
+    margin: 10px 0;
+}
+
+.projects .card-projects .card-item h4 span {
+    color: crimson;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.projects .card-projects .card-item p {
+    color: rgb(24, 24, 24);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.projects .card-projects .card-item .live {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 22px;
+    padding: 2px 8px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.projects .card-projects .card-item .live:hover {
+    color: crimson;
+    background: none;
+}
+
+.projects .card-projects .card-item .live i {
+    margin-left: 5px;
+    line-height: 35px;
 }
 
 
