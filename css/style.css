@@ -265,6 +265,14 @@ section .title::after {
     background: none;
 }
 
+@media (max-width: 800px) {
+    .home {
+        display: flex;
+        background: url("../images/banner_protofilio.png") no-repeat;
+        background-position: left center;
+    }
+}
+
 
 /* about section styling */
 
@@ -391,30 +399,6 @@ section .title::after {
     /* flex: 0 0 50%;
     max-width: 50%; */
 }
-
-
-/* .skills .skills-content .left p {
-    text-align: justify;
-}  */
-
-
-/* .skills .skills-content .left a {
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
-
-.skills .skills-content .left a:hover {
-    color: crimson;
-    background: none;
-} */
 
 .skills .skills-content .right .bars {
     margin-bottom: 15px;
