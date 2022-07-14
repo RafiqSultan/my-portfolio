@@ -22,15 +22,29 @@
 //     document.querySelector('#listhtml').style.color = '#FFF';
 // }
 
-// // *send email
-// const form = document.querySelector('.form-contact'),
-//     name = document.querySelector('#name'),
-//     email = document.querySelector('#email'),
-//     subject = document.querySelector('#subject'),
-//     msg = document.querySelector('#message-contact');
+// *send email
+const form = document.querySelector('.form-contact');
+// function send email
+function sendMsg(e) {
+    e.preventDefault();
 
+    const nameContact = document.querySelector('#nameContact'),
+        email = document.querySelector('#email'),
+        subject = document.querySelector('#subject'),
+        msg = document.querySelector('#msg-contact');
+    Email.send({
+        SecureToken: "f68c585d-4a40-4327-b964-bf16cf97fcc3",
+        To: 'Rafiq.alsultan@gmail.com',
+        From: email.value,
+        Subject: subject.value,
+        Body: nameContact.value + ":" + msg.value
+    }).then(
+        message => alert(message)
+    );
+}
+// add the event Listener
+form.addEventListener('submit', sendMsg);
 
-//     // function send email
 
 
 
