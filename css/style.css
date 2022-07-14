@@ -818,13 +818,17 @@ section .title::after {
         position: relative;
         flex: 0 0 100%;
         max-width: 100%;
-        flex-direction: row;
+        height: 100px;
+        flex-direction: row !important;
         margin: 10px auto;
-        margin-top: -150px;
+        margin-top: -130px;
     }
     .socialMedia .socialIcon {
         width: 100%;
         padding: 10px;
+        box-shadow: 0 0 15px rgb(53, 53, 53);
+        margin: 2px;
+        border-radius: 8px;
     }
 }
 
