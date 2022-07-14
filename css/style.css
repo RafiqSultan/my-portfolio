@@ -815,13 +815,24 @@ section .title::after {
 
 @media (max-width:475px) {
     .socialMedia {
-        display: none;
+        position: relative;
+        flex: 0 0 100%;
+        max-width: 100%;
+        flex-direction: row;
+        margin: 10px auto;
+        margin-top: -150px;
+    }
+    .socialMedia .socialIcon {
+        width: 100%;
+        padding: 10px;
+        margin: 5px;
     }
 }
 
 .socialMedia .socialIcon {
     width: 100%;
     padding: 5px;
+    height: 50px;
 }
 
 .socialMedia i {
