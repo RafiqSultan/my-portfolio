@@ -12,6 +12,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 
 /* custom scroll bar */
 
@@ -799,6 +803,12 @@ section .title::after {
     border-radius: 5px;
     padding: 5px 0;
     text-align: center;
+}
+
+@media (max-width:475px) {
+    .socialMedia {
+        display: none;
+    }
 }
 
 .socialMedia .socialIcon {
