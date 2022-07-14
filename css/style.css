@@ -593,7 +593,7 @@ section .title::after {
     gap: 10px;
 }
 
-@media (max-width:450px) {
+@media (max-width:400px) {
     .projects .card-projects {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
