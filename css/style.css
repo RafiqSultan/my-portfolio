@@ -128,7 +128,7 @@ section .title::after {
     left: 0;
     width: 150%;
     height: 100%;
-    background: repeating-linear-gradient( 60deg, transparent, transparent 20px, rgba(85, 37, 37, 0.5) 20px, rgba(88, 45, 45, 0.568) 25px);
+    background: repeating-linear-gradient( 45deg, transparent, transparent 20px, rgba(85, 37, 37, 0.5) 20px, rgba(88, 45, 45, 0.568) 25px);
     animation: load 1s infinite linear;
 }
 
@@ -141,7 +141,7 @@ section .title::after {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-30px);
+        transform: translateX(-35px);
     }
 }
 
