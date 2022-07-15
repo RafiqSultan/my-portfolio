@@ -107,6 +107,44 @@ section .title::after {
     transform: translateX(-50%);
 }
 
+.loading_proj {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 22px;
+    padding: 2px 8px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+    cursor: wait;
+    position: relative;
+    overflow: hidden;
+}
+
+.loading_proj::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 100%;
+    background: repeating-linear-gradient( 60deg, transparent, transparent 20px, rgba(85, 37, 37, 0.5) 20px, rgba(88, 45, 45, 0.568) 25px);
+    animation: load 1s infinite linear;
+}
+
+.loading_proj .loading_text {
+    position: relative;
+}
+
+@keyframes load {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-30px);
+    }
+}
+
 
 /* navbar styling */
 
