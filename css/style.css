@@ -522,8 +522,8 @@ section .title::after {
     width: 85%;
 }
 
-.skills .skills-content .right .line.react span {
-    width: 85%;
+.skills .skills-content .right .line.vue span {
+    width: 90%;
 }
 
 .skills .skills-content .right .line.bootstarp span {
@@ -565,8 +565,8 @@ section .title::after {
     content: '90%';
 }
 
-.skills .skills-content .right .line.react span::after {
-    content: '85%';
+.skills .skills-content .right .line.vue span::after {
+    content: '90%';
 }
 
 .skills .skills-content .right .line.php span::after {

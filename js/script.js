@@ -110,8 +110,8 @@ $(document).ready(function() {
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Web Developer"],
-        typeSpeed: 200,
+        strings: ["UI/UX Designer","Frontend Developer"],
+        typeSpeed: 250,
         backSpeed: 60,
         loop: true
     });
