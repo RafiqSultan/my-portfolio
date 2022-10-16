@@ -204,6 +204,17 @@ section .title::after {
 .navbar.sticky .menu li a:hover {
     color: #fff;
 }
+.navbar  .lang a{
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+    
+}
+.navbar  .lang a:first-child{
+    color: crimson;
+    margin: 0 10px;
+    font-weight: bold;
+}
 
 
 /* menu btn styling */
@@ -265,7 +276,7 @@ section .title::after {
     width: 100%;
     height: 100%;
     top: 0;
-    background-color:rgba(0,0, 0, 0.75);
+    background-color:rgba(0,0, 0, 0.8);
     
 }
 
@@ -326,7 +337,8 @@ section .title::after {
     .home {
         display: flex;
         background: url("../images/overly_site.jpg") no-repeat;
-        background-position: left center;
+        background-position:  center;
+        background-size: 100% 110%;
     }
 }
 
@@ -460,21 +472,24 @@ section .title::after {
     border-radius: 14px;
     background: crimson!important;
 }
-/* .owl-dots.active,
-.owl-dots:hover{
-    background: crimson!important;
-} */
+
 
 /* skills section styling */
 
 .skills .title::after {
     content: "what i know";
 }
+.skills .skills-content {
+    margin-top: 0;
+    display: flex;
+    align-items: flex-start;
+}
 
 .skills .skills-content .column {
     width: calc(50% - 30px);
-    /* flex: 0 0 50%;
-    max-width: 50%; */
+}
+.skills .skills-content .column h2 {
+    margin-bottom: 20px;
 }
 
 .skills .skills-content .right .bars {
@@ -529,7 +544,7 @@ section .title::after {
 .skills .skills-content .right .line span::after {
     position: absolute;
     right: 0;
-    top: -25px;
+    top: -30px;
     background: #000;
     color: #fff;
     padding: 1px 3px;
@@ -540,7 +555,34 @@ section .title::after {
 
 
 /* Skills line   */
+/* Design */
 
+.skills .skills-content .right .line.psd span {
+    width: 90%;
+}
+.skills .skills-content .right .line.psd span::after {
+    content: '90%';
+}
+.skills .skills-content .right .line.ill span {
+    width: 85%;
+}
+.skills .skills-content .right .line.ill span::after {
+    content: '85%';
+}
+.skills .skills-content .right .line.xd span {
+    width: 95%;
+}
+.skills .skills-content .right .line.xd span::after {
+    content: '95%';
+}
+.skills .skills-content .right .line.figma span {
+    width: 95%;
+}
+.skills .skills-content .right .line.figma span::after {
+    content: '95%';
+}
+
+/* Frontend  */
 .skills .skills-content .right .line.html span {
     width: 95%;
 }
@@ -1021,7 +1063,7 @@ footer span a:hover {
         flex: 100%;
     }
     .services  .card {
-        width: calc(50% - 10px);
+        width: 100px;
         margin-bottom: 20px;
     }
     .skills .skills-content .column,

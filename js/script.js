@@ -116,12 +116,12 @@ $(document).ready(function() {
         loop: true
     });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Web Developer"],
-        typeSpeed: 200,
-        backSpeed: 60,
-        loop: true
-    });
+    // var typed = new Typed(".typing-2", {
+    //     strings: ["Web Developer"],
+    //     typeSpeed: 200,
+    //     backSpeed: 60,
+    //     loop: true
+    // });
 
     // owl carousel script
     $('.carousel').owlCarousel({
