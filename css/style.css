@@ -251,24 +251,39 @@ section .title::after {
 .home {
     display: flex;
     background: url("../images/overly_site.jpg") no-repeat;
-    background-position: right center;
+    background-position:center;
     height: 100vh;
     width: 100%;
     color: #fff;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
+    position: relative;
+}
+.home .overly{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color:rgba(0,0, 0, 0.75);
+    
 }
 
 .home .max-width {
     width: 100%;
-    display: flex;
+    z-index: 100;
 }
 
 .home .max-width .row {
     margin-right: 0;
 }
-
+.home .home-content{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
 .home .home-content .text-1 {
     font-size: 27px;
 }
@@ -310,7 +325,7 @@ section .title::after {
 @media (max-width: 800px) {
     .home {
         display: flex;
-        background: url("../images/banner_protofilio.png") no-repeat;
+        background: url("../images/overly_site.jpg") no-repeat;
         background-position: left center;
     }
 }
@@ -331,7 +346,6 @@ section .title::after {
     width: 400px;
     object-fit: cover;
     border-radius: 20px;
-    border-bottom: 5px solid crimson;
 }
 
 .about .about-content .right {
@@ -391,8 +405,8 @@ section .title::after {
     content: "what i provide";
 }
 
-.services .serv-content .card {
-    width: calc(33% - 20px);
+.services .card {
+    width: calc(90% - 20px);
     background: #222;
     text-align: center;
     border-radius: 6px;
@@ -401,34 +415,55 @@ section .title::after {
     transition: all 0.3s ease;
 }
 
-.services .serv-content .card:hover {
+.services  .card:hover {
     background: crimson;
 }
 
-.services .serv-content .card .box {
+.services .card .box {
     transition: all 0.3s ease;
 }
 
-.services .serv-content .card:hover .box {
+.services .card:hover .box {
     transform: scale(1.05);
 }
 
-.services .serv-content .card i {
+.services .card i {
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
 
-.services .serv-content .card:hover i {
+.services  .card:hover i {
     color: #fff;
 }
 
-.services .serv-content .card .text {
+.services .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+    background: crimson!important;
+}
+/* .owl-dots.active,
+.owl-dots:hover{
+    background: crimson!important;
+} */
 
 /* skills section styling */
 
@@ -985,7 +1020,7 @@ footer span a:hover {
     .about .about-content .right {
         flex: 100%;
     }
-    .services .serv-content .card {
+    .services  .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }

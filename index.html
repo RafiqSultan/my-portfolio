@@ -7,8 +7,12 @@
     <title>Rafiq_Portfolio_Site</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 
 <body>
@@ -17,15 +21,19 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <div class="logo"><a href="#">R<span>S</span></a></div>
             <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#home" class="menu-btn">Hom</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#services" class="menu-btn">Services</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#teams" class="menu-btn">Projects</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
+            <div class="lang">
+                <a href="">EN</a>
+                <a href="">AR</a>
+            </div>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
@@ -42,6 +50,7 @@
                 <a href="#">Contact me</a>
             </div>
         </div>
+        <div class="overly"></div>
     </section>
 
     <!-- about section start -->
@@ -50,7 +59,7 @@
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="images/RafiqSultan.jpg" alt="">
+                    <img src="images/about_des.jpg" alt="">
                 </div>
                 <div class="column right">
                     <div class="text">I'm Rafiq and I'm a <span class="typing-2"></span></div>
@@ -69,14 +78,30 @@
     <section class="services" id="services">
         <div class="max-width">
             <h2 class="title">My services</h2>
-            <div class="serv-content">
+            
+            <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-paint-brush"></i>
+                        <i class="fa fa-mobile"></i>
                         <div class="text">Web Design</div>
                         <p>I design websites from start to finish on my own or as part of a team</p>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fab fa-chrome"></i>
+                        <div class="text">Web Design</div>
+                        <p>I design websites from start to finish on my own or as part of a team</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fab fa-figma"></i>
+                        <div class="text">Web Design</div>
+                        <p>I design websites from start to finish on my own or as part of a team</p>
+                    </div>
+                </div>
+
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-code "></i>
@@ -91,10 +116,12 @@
                         <p>Carry out design and analysis of software and marketing systems</p>
                     </div>
                 </div>
+
             </div>
         </div>
-        </div>
+           
     </section>
+   
 
     <!-- skills section start -->
     <section class="skills" id="skills">
@@ -172,6 +199,42 @@
 
                         </div>
                         <div class="line laravel"><span></span></div>
+                    </div>
+                </div>
+                <div class="column left right">
+                    <h2>FrontEnd</h2>
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="line html"><span></span></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="line css"><span></span></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Bootstarp</span>
+
+                        </div>
+                        <div class="line bootstarp"><span></span></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+
+                        </div>
+                        <div class="line js"><span></span></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Vue js</span>
+
+                        </div>
+                        <div class="line vue"><span></span></div>
                     </div>
                 </div>
             </div>
@@ -326,7 +389,7 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                    
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -409,12 +472,8 @@
     </footer>
 
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    
+    
     <script src="js/script.js"></script>
 </body>
 
