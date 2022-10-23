@@ -125,6 +125,7 @@ $(document).ready(function() {
 
     // owl carousel script
     $('.carousel').owlCarousel({
+        rtl:true,
         margin: 30,
         loop: true,
         autoplay: true,
