@@ -16,7 +16,11 @@ body {
     overflow-x: hidden;
 }
 
-
+.menu .lang-link-eng{
+    font-weight: bold !important;
+    color: aqua !important;
+    transform:scale(1.1) ;
+}
 /* custom scroll bar */
 
 ::-webkit-scrollbar {
@@ -216,6 +220,12 @@ section .title::after {
     font-weight: bold;
 }
 
+.lang-link{
+    margin-left: 1000% !important;
+}
+.lang-link-ar{
+    margin-left: 1100% !important;
+}
 
 /* menu btn styling */
 
@@ -276,7 +286,7 @@ section .title::after {
     width: 100%;
     height: 100%;
     top: 0;
-    background-color:rgba(0,0, 0, 0.8);
+    background-color:rgba(0,0, 0, 0.6);
     
 }
 
@@ -426,7 +436,7 @@ section .title::after {
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin: 0 10px;
+  /* margin-right: 50px; */
 }
 
 .services  .card:hover {
@@ -592,22 +602,27 @@ section .title::after {
 .skills .skills-content .right .line.css span {
     width: 90%;
 }
+.skills .skills-content .right .line.sass span {
+    width: 90%;
+}
 
 .skills .skills-content .right .line.bootstarp span {
     width: 90%;
 }
-
+.skills .skills-content .right .line.tailwind span {
+    width: 90%;
+}
 .skills .skills-content .right .line.js span {
     width: 85%;
 }
-
+.skills .skills-content .right .line.react span {
+    width: 85%;
+}
 .skills .skills-content .right .line.vue span {
-    width: 90%;
+    width: 80%;
 }
 
-.skills .skills-content .right .line.bootstarp span {
-    width: 90%;
-}
+/* Backend */
 
 .skills .skills-content .right .line.php span {
     width: 90%;
@@ -1014,7 +1029,15 @@ footer span a:hover {
 
 
 /* responsive media query start */
-
+@media (max-width: 1250px) {
+    .lang-link{
+        margin-left: 450% !important;
+    }
+    .lang-link-ar{
+        margin-left: 500% !important;
+    }
+    }
+}
 @media (max-width: 1104px) {
     .about .about-content .left img {
         height: 350px;
@@ -1057,6 +1080,11 @@ footer span a:hover {
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
+    }
+    .lang-link-ar,
+    .lang-link
+    {
+        margin-left: 0% !important;
     }
     .home .home-content .text-2 {
         font-size: 70px;
@@ -1139,5 +1167,11 @@ footer span a:hover {
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+    .services .card{
+        margin: auto;
+    }
+    .projects .card{
+        margin: auto;
     }
 }
