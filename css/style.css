@@ -500,6 +500,9 @@ section .title::after {
 .skills .skills-content .column {
     width: calc(50% - 30px);
 }
+.skills .skills-content .column.right {
+    margin-top: -90px !important;
+}
 .skills .skills-content .column h2 {
     margin-bottom: 20px;
 }
@@ -1126,6 +1129,9 @@ footer span a:hover {
     .contact .contact-content .column {
         width: 100%;
         margin-bottom: 35px;
+    }
+    .skills .skills-content .column.right {
+        margin-top: 0 !important;
     }
 }
 
