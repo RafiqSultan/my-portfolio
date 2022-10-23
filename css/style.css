@@ -625,11 +625,11 @@ section .title::after {
 /* Backend */
 
 .skills .skills-content .right .line.php span {
-    width: 90%;
+    width: 85%;
 }
 
 .skills .skills-content .right .line.database span {
-    width: 90%;
+    width: 85%;
 }
 
 .skills .skills-content .right .line.mvc span {
@@ -637,9 +637,11 @@ section .title::after {
 }
 
 .skills .skills-content .right .line.laravel span {
-    width: 85%;
+    width: 80%;
 }
-
+.skills .skills-content .right .line.api span {
+    width: 90%;
+}
 
 /* Skills Card  */
 
@@ -650,7 +652,9 @@ section .title::after {
 .skills .skills-content .right .line.css span::after {
     content: '90%';
 }
-
+.skills .skills-content .right .line.sass span::after {
+    content: '90%';
+}
 .skills .skills-content .right .line.js span::after {
     content: '85%';
 }
@@ -658,13 +662,18 @@ section .title::after {
 .skills .skills-content .right .line.bootstarp span::after {
     content: '90%';
 }
-
-.skills .skills-content .right .line.vue span::after {
+.skills .skills-content .right .line.tailwind span::after {
     content: '90%';
+}
+.skills .skills-content .right .line.react span::after {
+    content: '85%';
+}
+.skills .skills-content .right .line.vue span::after {
+    content: '80%';
 }
 
 .skills .skills-content .right .line.php span::after {
-    content: '90%';
+    content: '85%';
 }
 
 .skills .skills-content .right .line.mvc span::after {
@@ -672,10 +681,13 @@ section .title::after {
 }
 
 .skills .skills-content .right .line.laravel span::after {
-    content: '85%';
+    content: '80%';
 }
 
 .skills .skills-content .right .line.database span::after {
+    content: '85%';
+}
+.skills .skills-content .right .line.api span::after {
     content: '90%';
 }
 
