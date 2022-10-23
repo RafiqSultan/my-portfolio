@@ -739,22 +739,18 @@ section .title::after {
 @media (max-width:790px) {
     .projects .card-projects .card-item{
 
-        margin-left: 28%!important;
+       width: 100%;
+       margin: auto !important;
+       margin-bottom: 20px !important;
     }
 }
-@media (max-width:600px) {
+
+@media (max-width:400px) {
     .projects .card-projects .card-item{
-        margin-left: 23% !important;
-    }
-}
-@media (max-width:500px) {
-    .projects .card-projects .card-item{
-        margin-left: 15% !important;
-    }
-}
-@media (max-width:450px) {
-    .projects .card-projects .card-item{
+        width: 280px !important;
+        height: 350px;
         margin-left: 0 !important;
+
     }
 }
 
@@ -1183,7 +1179,5 @@ footer span a:hover {
     .services .card{
         margin: auto;
     }
-    .projects .card{
-        margin: auto;
-    }
+    
 }
