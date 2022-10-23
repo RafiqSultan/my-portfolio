@@ -346,7 +346,7 @@ section .title::after {
 @media (max-width: 800px) {
     .home {
         display: flex;
-        background: url("../images/overly_site.jpg") no-repeat;
+        background: url("../images/overly-site.webp") no-repeat;
         background-position:  center;
         background-size: 100% 110%;
     }

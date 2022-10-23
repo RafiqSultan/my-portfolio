@@ -343,14 +343,14 @@ section .title::after {
     background: none;
 }
 
-/* @media (max-width: 800px) {
+@media (max-width: 800px) {
     .home {
         display: flex;
-        background: url("../images/overly_site.jpg") no-repeat;
+        background: url(overly-site.webp) no-repeat;
         background-position:  center;
         background-size: 100% 110%;
     }
-} */
+}
 
 
 /* about section styling */
