@@ -500,9 +500,9 @@ section .title::after {
 .skills .skills-content .column {
     width: calc(50% - 30px);
 }
-.skills .skills-content .column.right {
+/* .skills .skills-content .column.right {
     margin-top: -90px !important;
-}
+} */
 .skills .skills-content .column h2 {
     margin-bottom: 20px;
 }
@@ -966,7 +966,7 @@ section .title::after {
     align-items: center;
     justify-content: space-evenly;
     width: 40px;
-    height: 195px;
+    height: 200px;
     background-color: #fff;
     box-shadow: 0 0 10px #fff;
     border-radius: 5px;
