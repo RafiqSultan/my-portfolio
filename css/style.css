@@ -793,7 +793,7 @@ section .title::after {
     padding: 3px 10px;
     margin-right: 5px;
     border-radius: 7px;
-    font-weight: 500;
+    font-weight: 505;
 }
 .projects .card-projects .card-item:hover .image img {
     transform: scale(1.2);
